@@ -157,10 +157,77 @@ print((imie + ", ")*(krotnosc - 1)+imie+".")'''
 
 #P22
 
-Imie = input("podaj imię: ")
+'''Imie = input("podaj imię: ")
 Nazwisko = input("podaj nazwisko: ")
 wiek = input("podaj swój wiek: ")
 Stanowisko = input("podaj stanowisko ")
 Placa = input("podaj placę brutto: ")
 
 print ((Imie +" "+Nazwisko+" (wiek: "+ wiek+ " lat) pracuje na stanowisku: "+ Stanowisko+" (pensja: "+ Placa+ " brutto).\n")*10 )
+'''
+
+'''kwota_netto_h=5500/168
+print("kwota netto / h", round(kwota_netto_h, 2), "zł")
+print("kwota brutto / h", round((kwota_netto_h)*1.23, 2), "zł")
+
+
+p = True
+q  =False
+
+DM1= not(p and q)
+DM2=(not p) or (not q)
+
+print (DM1, DM2)
+print(DM1 == DM2)
+'''
+
+#p27
+
+'''a = False
+b = False
+c = True
+
+p1= (not a) and (not b) and (not c)
+p2= (not a) and (not b) and c
+p3= (not a) and b and (not c)
+p4= a and (not b) and (not c)
+
+print (p1, p2, p3, p4)
+ans= p1 or p2 or p3 or p4
+print (ans)'''
+
+#28
+'''
+liczba = round(17**(1/2),2)
+uroj=1j
+
+res=str(liczba * uroj)
+
+print("liczba zespolona: 0 + " +res)
+'''
+#p29
+'''z=17%7
+print (z**2 + z*3)'''
+
+#p30
+'''w1=str(1.2e+3+34.5)
+print ((w1 +"; ")*19 + w1)'''
+
+#p32
+'''napis1=input("wpisz pierwszy napis porównania: ")
+napis2=input("wpisz drugi napis porównania: ")
+
+print ("napis pierwszy jest większy leksykograficznie", napis1>napis2)
+print ("napisy są równe leksykograficznie", napis1==napis2)
+print ("napis pierwszy jest mniejszy leksykograficznie", napis1<napis2)'''
+
+print("imie\t"+"nazwisko\t"+ "stanowisko\t")
+
+#p38
+
+SPK = int(input("podaj wartość początkową kapitału: "))
+P=float(input("podaj stopę procentową: "))
+N=int(input("podaj liczbę lat: "))
+res= round(SPK*((1+(P/100))**N),2)
+
+print("Kwota po "+str(N)+" latach wynosi: "+str(res)+" zł")
