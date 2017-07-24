@@ -8,7 +8,7 @@ tekst = "to jest moj tekst"
 tekst2 = 'to jest inny tekst'
 literki = 'a'
 ''' 
-witaj = "I'm Aneta"
+'''witaj = "I'm Aneta"
 zmienna3 = 2 + 5
 
 Zmienna3 = 'liczba'
@@ -21,7 +21,6 @@ print (zmienna3, Zmienna3)
 print (nowa_zmienna)
 print ("hi, " + witaj)
 print ("hi, " + witaj + " - nice to meet you!")
-
 
 print ("przed zmiana", Zmienna3)
 
@@ -44,7 +43,7 @@ a=2.1
 b="abc"
 c='0'
 print (a, b, c)
-
+'''
 #P3
 '''Imie = input("podaj imię ")
 Nazwisko = input("podaj nazwisko ")
@@ -70,18 +69,18 @@ print (pole_kola, pi*(promien**2))
 # zwraca typ wartości zmiennej
 
 print (type(pole_kola))'''
-print(type(21j))
+'''print(type(21j))
 
 dluga = 3147483647
-print(type(dluga))
+print(type(dluga))'''
 '''dluga2 = 32L (do sprawdzenia komenda)
-print(type(dluga2))'''
+print(type(dluga2))
 
-print(3/2, 3//2)
+print(3/2, 3//2)'''
 
 #(round zaokrągla matematycznie)
 
-print(round(3/2, 3))
+'''print(round(3/2, 3))
 
 print(round(1.3), round(1.5), round(1.6))
 
@@ -90,7 +89,7 @@ print(round(-1.3), round(-1.5), round(-1.6))
 # int() rzutuje na dół
 print(int(1.3), int(1.5), int(1.6))
 
-print(int(-1.3), int(-1.5), int(1.6))
+print(int(-1.3), int(-1.5), int(1.6))'''
 
 #p10
 
@@ -125,14 +124,14 @@ print("do zapłaty:", suma, "zł")
 '''
 
 
-a=12 +0j
+'''a=12 +0j
 b=1+(-1j)
 print (a*b)
 
 log1=True
 print(type(log1))
 
-print(bool(""), bool (0), bool("ALA"))
+print(bool(""), bool (0), bool("ALA"))'''
 
 a = """
 autor
@@ -228,6 +227,6 @@ print("imie\t"+"nazwisko\t"+ "stanowisko\t")
 SPK = int(input("podaj wartość początkową kapitału: "))
 P=float(input("podaj stopę procentową: "))
 N=int(input("podaj liczbę lat: "))
-res= round(SPK*((1+(P/100))**N),2)
+res= round(SPK*((1+(P/100))**N),2)P=float(input("podaj stopę procentową: "))
 
 print("Kwota po "+str(N)+" latach wynosi: "+str(res)+" zł")
