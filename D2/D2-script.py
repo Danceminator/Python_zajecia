@@ -140,7 +140,7 @@ elif (A.issuperset(B)):
 else:
     print("zbiory są różne")'''
 
-
+'''
 lista =[1,2,3,4,5,6,7,8,9]
 
 i=len(lista)-1
@@ -157,8 +157,129 @@ print ('poza pętlą')
 a = 20
 b=15
 print(" a jest większe od b o: "+str(a-b)) if (a >=b) else print("b jest większe od a o: "+str(b-a))
+'''
+'''
+lista =[1,2,3,4,5,6,7,8,9]
+for var in lista:
+        print("Wartość: "+str(var))
+        
+lista.append(15)
+
+for index in enumerate(lista):
+        print("Index: "+str(index) + "\t Wartość: "+str(var))
+'''
+
+'''
+SL={'a':1, 'b':2, 'c':3}
+for k in SL:
+        if (SL[k] >=1):
+                print( k, SL[k])
+                
+s1=range(100)
+print (s1)
+for i in s1:
+        print(i)
+for j in range(15, 25):
+        print(j)
+
+for k in range(0,20,2):
+        print ("wynik: %-4i%-6i%-8i" % (k, k**2, k**3))
+        
+for x in range(5, 100, 10):
+        print("pierwiastkiem liczby %2i jest %5.3f" % (x, x**0.5, ))
+'''
 
 
+#p57 DO POPRAWY!!!!!
 
+'''sklep_produkty ={"monitor":1, "klawiatura":2, "mysz": 3}
+produkty_cena={1:1500, 2:400, 3: 200}
+produkty_dost={1:5, 2:5, 3:15}
+suma =0
+i="t"
+while (i=="t"):
+    zamowienie= input("wybierz towar: ")
+    zam_ilość=int(input("podaj liczbę zamaiwianego produktu: "))     
+    for k in sklep_produkty:
+        if(zamowienie in sklep_produkty.keys()):
+            if(zamowienie == k and produkty_dost[sklep_produkty[k]]>= zamowienie_ilosc):
+                print ("produkt dostępny: " +k)
+                print ("zamawiasz: " +str(zam_ilość) +"szt")
+                suma +=zam_ilość*produkty_cena[sklep_produkty[k]]
+            elif(zamowienie == k and produkty_dost [sklep_produkty[k]] <zam_ilość):
+                print ("produkt dostępny: " +k)
+                print ("zamawiasz: " +str(produkty_dost)[sklep_produkty[k]] +"szt")
+        else:
+            print ("brak produktu w sklepie")
+            break
+        i=input("czy chcesz zamawiać dalej? t/n)")
+    print("do zapłaty: "+str(suma))
+'''
 
+#P57 od Michała
 
+'''
+sklep_produkty = {"monitor": 1, "klawiatura": 2, "mysz": 3}
+produkty_cena = {1: 1500, 2: 400, 3: 200}
+produkty_dostepnosc = {1: 5, 2: 5, 3: 15}
+suma = 0
+i = "t"
+while(i == "t"):
+    zamowienie = input("Wybierz towar: ")
+    zamowienie_ilosc = int(input("Podaj ilosc zamawianego produktu: "))
+    if (zamowienie in sklep_produkty.keys()):
+        if(produkty_dostepnosc[sklep_produkty[zamowienie]] >= zamowienie_ilosc):
+            print("Produkt dostępny: " + zamowienie)
+            print("Zamawiasz: " + str(zamowienie_ilosc) + ' szt')
+            suma += zamowienie_ilosc* produkty_cena[sklep_produkty[zamowienie]]    
+        elif(produkty_dostepnosc[sklep_produkty[k]] < zamowienie_ilosc):
+            print("Produkt dostępny: " + zamowienie)
+            print("Jest dostępne tylko: " + str(produkty_dostepnosc[sklep_produkty[k]]) + ' szt')   	 
+    else:
+        print("Brak produktu w sklepie")
+    i = input("czy chcesz zamawiać dalej? (t/n)")
+print("Do zapłaty: "+ str(suma))
+'''
+
+ciag= list(input("wprowadź ciąg dowolnych znaków: "))
+print(ciag)
+res=[]
+i=0
+print(len(ciag))
+to_dec={"0":"zero", "1":"jeden", "2":"dwa", "3":"trzy", "4":"cztery", "5":"pięć", "6":"sześć", "7":"siedem", "8":"osiem", "9":"dziewiec"}
+while (i >= len(ciag)):
+        t = ciag[i]
+        if (ord(t) <= 9):
+                res.append(to_dec[ord(t)])
+        else:
+                i = i+1
+print (res)
+
+'''
+print(ord('a'))
+ciag= list(input("wprowadź ciąg dowolnych znaków: "))
+print(ord(ciag[0]))
+'''
+#zadanie p61
+'''
+line = range(1,6)
+n = 1
+print("   %3i%3i%3i%3i%3i" % (1,2,3,4,5))
+print("==================")
+while(n<=5):
+    print(str(n)+" |", end="")
+    print("%3i%3i%3i%3i%3i" % (n*line[0], n*line[1], n*line[2], n*line[3], n*line[4]))
+    n +=1
+ ''' 
+
+'''
+np = range(1,10,2)
+i=len(np) - 1
+while(i >= 0):
+    if(i == 0):
+        print(np[i]**2)
+    else:
+        print(np[i]**2, end=", ")
+    i -=1
+
+'''
