@@ -240,7 +240,7 @@ while(i == "t"):
     i = input("czy chcesz zamawiać dalej? (t/n)")
 print("Do zapłaty: "+ str(suma))
 '''
-
+'''
 ciag= list(input("wprowadź ciąg dowolnych znaków: "))
 print(ciag)
 res=[]
@@ -254,7 +254,22 @@ while (i >= len(ciag)):
         else:
                 i = i+1
 print (res)
+'''
 
+#poprawione od Michała 
+
+ciag= input("wprowadź ciąg dowolnych znaków: ")
+res=[]
+i=0
+to_dec={"0":"zero", "1":"jeden", "2":"dwa", "3":"trzy", "4":"cztery", "5":"pięć", "6":"sześć", "7":"siedem", "8":"osiem", "9":"dziewiec"}
+while (i < len(ciag)):
+    if (ciag[i].isdigit()):
+        res.append(to_dec[ciag[i]])
+    i = i+1
+for i in res:
+    print(i,end="")
+            
+            
 '''
 print(ord('a'))
 ciag= list(input("wprowadź ciąg dowolnych znaków: "))
