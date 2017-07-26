@@ -255,7 +255,7 @@ while (i >= len(ciag)):
                 i = i+1
 print (res)
 '''
-
+'''
 #poprawione od Michała 
 
 ciag= input("wprowadź ciąg dowolnych znaków: ")
@@ -269,7 +269,8 @@ while (i < len(ciag)):
 for i in res:
     print(i,end="")
             
-            
+           
+''' 
 '''
 print(ord('a'))
 ciag= list(input("wprowadź ciąg dowolnych znaków: "))
