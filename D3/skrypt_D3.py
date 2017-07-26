@@ -41,19 +41,20 @@ def wyswietl(lista):
 wyswietl(silniaele(n))
 
 '''
-
+'''
+Źleeeee!!
 F=[0,1]
 n= int(input("wprowadź ile elementów ciągu Fibonacciego chcesz zobaczyć: "))
 i =2
 fib =2
 
-for n in F:
+while (i >=n):
     fib =F[i-2] + F[i-1]
     F.append(fib)
     i +=1
     
 print(F)
-
+'''
 '''
 def zdania(a=5):
     wyrazy=["ciąg", "Fibonacciego", "liczb", "naturalnych", "sposób", "następujący"]
@@ -74,3 +75,25 @@ def format(zdanie):
 
 format(zdania())
 '''
+
+from math import sqrt
+
+def odleglosc(x1, y1, x2, y2):
+    d=sqrt(((x2-x1)**2)+(y2-y1)**2)
+    return round(d,2)
+i=0
+x=[]
+y=[]
+
+while (i<2):
+    if(i==1):
+        print("podaj położenie początkowe: ")
+    else:
+        print("podaj położenie końcowe: ")
+    u1 = int(input(" "))
+    u2 = int(input(" "))
+    x.append(u1)
+    y.append(u2)
+    i  = i+1
+
+print(("Odległość wynosi:"),odleglosc(x[0],y[0],x[1],y[1]))
