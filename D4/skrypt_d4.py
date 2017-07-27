@@ -159,3 +159,4 @@ def wypiszpow5(limit, lista):
     
 wypiszpow5(int(input("podaj imit odcięcia: ")), wprowadz())
 
+
