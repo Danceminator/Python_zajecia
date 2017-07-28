@@ -111,5 +111,3 @@ print(p1.przelicz())
 p1.dodajNadgodziny(50)
 print(p1.przelicz())
 print(p1)
-
-      
